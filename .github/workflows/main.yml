@@ -60,7 +60,7 @@ jobs:
          git config --local user.email "tntflydragon616@qq.com"
          git config --local user.name "Chem2080"
          git add vmess.txt
-         git commit -m "Updated vmess.txt"
+         git commit -m "Update vmess.txt"
     - name: 推送更改
       uses:  ad-m/github-push-action@master
       with:
