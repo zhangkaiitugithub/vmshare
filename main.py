@@ -2,11 +2,6 @@ import datetime
 from pytz import timezone
 import requests
 import re
-import logging
-import traceback
-import os
-import random
-import utils
 from google_drive_downloader import GoogleDriveDownloader as gdd
 from lxml import etree
 
@@ -24,7 +19,7 @@ def get_urls(url):
 
 def get_ggid(url):
     resp = requests.get(url, headers=headers)
-    ids = re.findall(r"https://drive.google.com/uc?\export=download&amp;id=([\w-]*)</div>", resp.text)
+    ids = re.findall(r"https://drive.google.com/uc\?export=download&amp;id=([\w-]*)</div>", resp.text)
     return ids
     print(ids)
 
@@ -41,7 +36,7 @@ if __name__ == '__main__':
                                             dest_path='./mattkaydiary/{}.yaml'.format(datetime.datetime.now(timezone('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M')),
                                             showsize=True, overwrite=True)
 
-        gdd.download_file_from_google_drive(file_id=ids[1],dest_path='./sub/vmess.txt',showsize=True, overwrite=True)
+        gdd.download_file_from_google_drive(file_id=ids[1],dest_path='./newYaml/mattkaydiary.yaml',showsize=True, overwrite=True)
         print("网站爬取成功")
         # requests.get('https://api.day.app/3TKmw24emfnWtLN6xyDaW9/网站爬取成功{}'.format(
         #     datetime.datetime.now(timezone('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M')))
