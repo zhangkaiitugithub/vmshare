@@ -16,14 +16,14 @@ def main(event, context):
     utils.initLog('log.txt')
     utils.clearLog()
     savePoint(
-        'https://drive.google.com/uc?export=download&id=1yfQzoabIHHPh9FUeBxugwiYVryWKNltW')
+        'https://drive.google.com/uc?export=download&id=1yfQzoabIHHPh9FUeBxugwiYVryWKNltW','vmess.txt')
 
 # 获取文章地址
 
 
-def savePoint(url);
+def savePoint(url,name);
     resp = requests.get(url)
-    dirs = '.'
+    dirs = 
     day = time.strftime('%Y.%m.%d', time.localtime(time.time()))
     if 'proxies' in resp.text:
         if not os.path.exists(dirs):
