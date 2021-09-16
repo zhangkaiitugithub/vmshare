@@ -16,7 +16,7 @@ def main(event, context):
     utils.initLog('log.txt')
     utils.clearLog()
     savePoint(
-        'https://etproxypool.ga/clash/proxies?nc=CN&speed=30&type=vmess', 'vmess.txt')
+        'https://drive.google.com/uc?export=download&id=1yfQzoabIHHPh9FUeBxugwiYVryWKNltW', 'vmess.txt')
 
     # savePoint(
     #     'https://etproxypool.ga/clash/proxies?nc=CN&speed=30&type=ss', 'ss.txt')
