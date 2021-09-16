@@ -24,7 +24,7 @@ def get_urls(url):
 
 def get_ggid(url):
     resp = requests.get(url, headers=headers)
-    ids = re.findall(r"https://drive.google.com/uc?export=download&id=([\w-]*)</div>", resp.text)
+    ids = re.findall(r"https://drive.google.com/uc?\export=download&amp;id=([\w-]*)</div>", resp.text)
     return ids
     print(ids)
 
