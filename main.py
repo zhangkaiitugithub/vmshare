@@ -16,12 +16,12 @@ def main(event, context):
     utils.initLog('log.txt')
     utils.clearLog()
     savePoint(
-        'https://drive.google.com/uc?export=download&id=1yfQzoabIHHPh9FUeBxugwiYVryWKNltW', 'vmess.txt')
+        'https://drive.google.com/uc?export=download&id=1yfQzoabIHHPh9FUeBxugwiYVryWKNltW')
 
 # 获取文章地址
 
 
-def savePoint(url,name):
+def savePoint(url);
     resp = requests.get(url)
     dirs = '.'
     day = time.strftime('%Y.%m.%d', time.localtime(time.time()))
