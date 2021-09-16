@@ -31,9 +31,9 @@ def main(event, context):
 # 获取文章地址
 
 
-def savePoint(url, name):
+def savePoint(url):
     resp = requests.get(url)
-    dirs = './'
+    dirs = '.'
     day = time.strftime('%Y.%m.%d', time.localtime(time.time()))
     if 'proxies' in resp.text:
         if not os.path.exists(dirs):
