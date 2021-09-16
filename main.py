@@ -16,7 +16,7 @@ def main(event, context):
     utils.initLog('log.txt')
     utils.clearLog()
     savePoint(
-        'https://drive.google.com/uc?export=download&id=1yfQzoabIHHPh9FUeBxugwiYVryWKNltW','vmess.txt')
+        'https://drive.google.com/uc?export=download&id=1yfQzoabIHHPh9FUeBxugwiYVryWKNltW', 'vmess.txt')
 
 # 获取文章地址
 
