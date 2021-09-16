@@ -41,7 +41,7 @@ if __name__ == '__main__':
                                             dest_path='./log/{}.yaml'.format(datetime.datetime.now(timezone('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M')),
                                             showsize=True, overwrite=True)
 
-        gdd.download_file_from_google_drive(file_id=ids[1],dest_path='./sub/mess.txt',showsize=True, overwrite=True)
+        gdd.download_file_from_google_drive(file_id=ids[1],dest_path='./sub/vmess.txt',showsize=True, overwrite=True)
         print("网站爬取成功")
         # requests.get('https://api.day.app/3TKmw24emfnWtLN6xyDaW9/网站爬取成功{}'.format(
         #     datetime.datetime.now(timezone('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M')))
