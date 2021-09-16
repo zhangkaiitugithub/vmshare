@@ -18,10 +18,20 @@ def main(event, context):
     savePoint(
         'https://drive.google.com/uc?export=download&id=1yfQzoabIHHPh9FUeBxugwiYVryWKNltW', 'vmess.txt')
 
+    # savePoint(
+    #     'https://etproxypool.ga/clash/proxies?nc=CN&speed=30&type=ss', 'ss.txt')
+
+    # savePoint(
+    #     'https://etproxypool.ga/clash/proxies?nc=CN&speed=30&type=ssr', 'ssr.txt')
+
+    # savePoint(
+    #     'https://etproxypool.ga/clash/proxies?nc=CN&speed=30&type=trojan', 'trojan.txt')
+
+
 # 获取文章地址
 
 
-def savePoint(url, name);
+def savePoint(url, name):
     resp = requests.get(url)
     dirs = './sub'
     day = time.strftime('%Y.%m.%d', time.localtime(time.time()))
