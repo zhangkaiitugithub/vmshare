@@ -33,7 +33,7 @@ def main(event, context):
 
 def savePoint(url, name):
     resp = requests.get(url)
-    dirs = './subscribe'
+    dirs = './'
     day = time.strftime('%Y.%m.%d', time.localtime(time.time()))
     if 'proxies' in resp.text:
         if not os.path.exists(dirs):
