@@ -33,7 +33,7 @@ if __name__ == '__main__':
     ids = get_ggid(urls[0])
     if len(ids) == 2:
         gdd.download_file_from_google_drive(file_id=ids[1],
-                                            dest_path='./mattkaydiary/mattkayupdate.yaml'
+                                            dest_path='./mattkaydiary/mattkayupdate.yaml'，
                                             showsize=True, overwrite=True)
 
         gdd.download_file_from_google_drive(file_id=ids[1],dest_path='./newYaml/mattkaydiary.yaml',showsize=True, overwrite=True)
